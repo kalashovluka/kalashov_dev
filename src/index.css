@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+body, #root {
+  margin: 0;
+  height: 100%;
+  min-height: 100vh;
+}
+
+@theme {
+  --color-dark: #111111;
+  --color-cyan: #9af5ec;
+
+  --animate-cursor-blink: cursor-blink 2s steps(1) infinite;
+  @keyframes cursor-blink {
+    0% {
+      background-color: white;
+    }
+    50% {
+      background-color: transparent;
+    }
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 0px #9af5ec,
+                 0 0 0px #9af5ec,
+                 0 0 12px #9af5ec;
+  }
+
+  .list-triangle {
+    list-style: none;
+    padding-left: 1em;
+  }
+
+  .list-triangle li {
+    position: relative;
+  }
+
+  .list-triangle li::before {
+    content: '';
+    position: absolute;
+    left: -1em;
+    top: 0.6em;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #9af5ec;
+    transform: translateY(-50%);
+  }
+}
