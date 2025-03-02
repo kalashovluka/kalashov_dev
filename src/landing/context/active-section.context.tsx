@@ -8,14 +8,14 @@ const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
 const orderedSections: SectionName[] = [
   'Contact',
   'Works',
-  'Experience',
+  'Experiences',
   'About',
 ];
 
 export function ActiveSectionProvider({ children }: { children: ReactNode }) {
   const [sections, setSections] = useState({
     About: true,
-    Experience: false,
+    Experiences: false,
     Works: false,
     Contact: false,
   });

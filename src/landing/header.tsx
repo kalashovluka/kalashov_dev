@@ -34,7 +34,7 @@ export function Header() {
 
       <header className="w-full backdrop-blur-md z-1 p-5 gap-5 fixed top-0 font-mono tracking-tighter text-cyan font-medium flex justify-end">
         <Section section="About" isActive={sections.About} />
-        <Section section="Experience" isActive={sections.Experience} />
+        <Section section="Experiences" isActive={sections.Experiences} />
         <Section section="Works" isActive={sections.Works} />
         <Section section="Contact" isActive={sections.Contact} />
       </header>

@@ -1,6 +1,6 @@
 import { About } from './sections/about';
 import { Contact } from './sections/contact';
-import { Experience } from './sections/experience';
+import { Experiences } from './sections/experiences';
 import { Header } from './header';
 import { Works } from './sections/works';
 import { ActiveSectionProvider } from './context/active-section.context';
@@ -12,7 +12,7 @@ export function Landing() {
 
       <div className="flex flex-col h-full min-h-screen w-full bg-dark font-mono">
         <About />
-        <Experience />
+        <Experiences />
         <Works />
         <Contact />
       </div>

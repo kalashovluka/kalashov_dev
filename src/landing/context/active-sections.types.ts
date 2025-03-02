@@ -1,4 +1,4 @@
-export type SectionName = 'About' | 'Experience' | 'Works' | 'Contact';
+export type SectionName = 'About' | 'Experiences' | 'Works' | 'Contact';
 
 export interface ActiveSectionContextType {
   sections: Record<SectionName, boolean>;
