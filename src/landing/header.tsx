@@ -11,10 +11,15 @@ function Section({
   return (
     <a
       href={`#${section}`}
-      className={`transition-all duration-300 capitalize underline-offset-4 hover:opacity-100 hover:underline ${
-        isActive ? 'text-glow underline' : 'opacity-45'
+      className={`transition-all duration-300 capitalize relative group ${
+        isActive ? 'text-glow' : ''
       }`}
-    >{`<${section} />`}</a>
+    >
+      {`<${section} />`}
+      <span className={`absolute -bottom-1 left-0 h-[1px] bg-cyan transition-all duration-300 ${
+        isActive ? 'w-full' : 'w-0 group-hover:w-full'
+      }`} />
+    </a>
   );
 }
 

@@ -19,8 +19,7 @@ export function About() {
           <strong>
             <i>6 years</i>
           </strong>{' '}
-          of commercial experience, focused on building full-featured web
-          applications. List of my technologies includes:
+          of commercial experience, focused on building full-featured web and mobile applications. List of my technologies includes:
         </p>
         <div className="flex gap-10 mt-5">
           <ul className="list-triangle">

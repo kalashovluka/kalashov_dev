@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
 body, #root {
   margin: 0;
   height: 100%;
@@ -35,18 +40,28 @@ body, #root {
 
   .list-triangle li {
     position: relative;
+    display: flex;
+    align-items: center;
   }
 
   .list-triangle li::before {
     content: '';
     position: absolute;
     left: -1em;
-    top: 0.6em;
     width: 0;
     height: 0;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-left: 8px solid #9af5ec;
-    transform: translateY(-50%);
+  }
+
+  .border-dashed-large {
+    border: none;
+    background-image: linear-gradient(to right, var(--color-cyan) 50%, transparent 50%);
+    background-position: bottom;
+    background-size: 15px 2px;
+    background-repeat: repeat-x;
+    padding-bottom: 4px;
+    position: relative;
   }
 }
