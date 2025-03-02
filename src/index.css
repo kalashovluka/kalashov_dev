@@ -40,14 +40,13 @@ body, #root {
 
   .list-triangle li {
     position: relative;
-    display: flex;
-    align-items: center;
   }
 
   .list-triangle li::before {
     content: '';
     position: absolute;
     left: -1em;
+    top: 7px;
     width: 0;
     height: 0;
     border-top: 5px solid transparent;

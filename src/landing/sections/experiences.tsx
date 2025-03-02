@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
 import { useActiveSection } from '../context/use-active-section';
 
 type JobExperience = {
@@ -6,7 +6,7 @@ type JobExperience = {
   company: string;
   link: string;
   period: string;
-  details: string[];
+  details: ReactElement;
 };
 
 const experiences: Record<string, JobExperience> = {
@@ -15,37 +15,156 @@ const experiences: Record<string, JobExperience> = {
     company: 'Team Brilliant',
     link: 'https://www.linkedin.com/company/teambrilliant',
     period: 'Dec 2022 - Jan 2025 · 2 yrs 2 mos',
-    details: [
-      "Develop and maintenance of the company's software products, utilizing Web3 React and Next.js to build cutting-edge web applications.",
-      'Leveraged Web3 technologies to integrate blockchain functionality and create decentralized applications (dApps) with enhanced security and transparency.',
-      'Collaborated closely with cross-functional teams, including product managers, designers, and other developers, to translate project requirements into functional and intuitive web solutions.',
-      'Utilized Next.js framework to develop server-side rendered (SSR) applications, optimizing performance and search engine visibility.',
-      'Expertise in working with CMS like Strapi, handling content creation, and managing dynamic data to provide seamless user experiences across platforms.',
-      'Occasionally involved in back-end development using Express.js to create RESTful APIs, enabling smooth communication between front-end and back-end systems.',
-      'Actively participated in Agile development methodologies, attending daily standups, sprint planning, and retrospectives to ensure efficient project execution.',
-    ],
+    details: (
+      <>
+        <div className="mt-10 mb-2 text-lg font-bold">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative text-cyan underline"
+            href="https://www.linkedin.com/company/norwex/"
+          >
+            Norwex
+          </a>{' '}
+          · Contract
+        </div>
+        <ul className="space-y-4 list-triangle">
+          <li>
+            Worked on enhancing and modernizing web resources for Norwex - a
+            global direct sales company
+          </li>
+          <li>
+            Redesigned legacy Backbone.js platform into modern, scalable
+            solution using TypeScript, React and Next.js
+          </li>
+          <li>
+            Contributed to the development of a monorepo architecture, that
+            improved project structure and developer experience
+          </li>
+        </ul>
+
+        <div className="mt-10 mb-2 text-lg font-bold">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative text-cyan underline"
+            href="https://www.linkedin.com/company/howldotlink/"
+          >
+            Howl
+          </a>{' '}
+          · Contract
+        </div>
+        <ul className="space-y-4 list-triangle">
+          <li>
+            Developed a cross-platform React Native application for Howl, social
+            commerce platform that connects brands with creators
+          </li>
+          <li>
+            Implemented innovative solutions to optimize performance and enhance
+            user engagement
+          </li>
+          <li>
+            Collaborated with the business to meet product goals and ensure a
+            seamless user experience
+          </li>
+        </ul>
+      </>
+    ),
   },
   'Full Stack Developer @ Spinom': {
     position: 'Full Stack Developer',
     company: 'Spinom',
     link: 'https://www.linkedin.com/company/spinom',
     period: 'Jan 2021 - Aug 2022 · 1 yr 8 mos',
-    details: [
-      'Led development of multiple web applications using React and Node.js',
-      'Implemented responsive designs and optimized application performance',
-      'Worked closely with clients to gather requirements and deliver solutions',
-    ],
+    details: (
+      <>
+        <div className="mt-10 mb-2 text-lg font-bold">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative text-cyan underline"
+            href="https://www.linkedin.com/company/viaro/"
+          >
+            VIARO
+          </a>{' '}
+          · Contract
+        </div>
+        <ul className="space-y-4 list-triangle">
+          <li>
+            Lead development of VIARO, innovative Georgian autoparts marketplace
+          </li>
+          <li>Created comprehensive B2B and B2C React Native applications</li>
+          <li>
+            Ensured seamless integration with third-party autoparts catalogs,
+            foreign supplier services and numerous banking and delivery
+            solutions
+          </li>
+          <li className="mt-14">
+            Spearheaded creation of React Native application for{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative text-cyan underline"
+              href="https://gudabooks.ge/"
+            >
+              Gudabooks
+            </a>
+            , featuring e-book store, e-book library and audiobooks online
+            streaming
+          </li>
+          <li>
+            Participated in creation of online store for{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative text-cyan underline"
+              href="https://www.palitral.ge/"
+            >
+              PalitraL Publishing
+            </a>
+          </li>
+          <li>
+            Worked on modernizing and enhancing popular Georgian online stores,
+            such as{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative text-cyan underline"
+              href="https://ebg.ge/"
+            >
+              Ebg.ge
+            </a>{' '}
+            and{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative text-cyan underline"
+              href="https://order24.ge/"
+            >
+              Order24.ge
+            </a>
+          </li>
+        </ul>
+      </>
+    ),
   },
   'Back End Developer @ Lupi AI': {
     position: 'Back End Developer',
     company: 'Lupi AI',
     link: 'https://www.linkedin.com/company/lupiai',
     period: 'Jun 2019 - Jan 2021 · 1 yr 8 mos',
-    details: [
-      'Developed and maintained e-commerce platform features',
-      'Implemented responsive UI components using React',
-      'Collaborated with backend team to integrate APIs',
-    ],
+    details: (
+      <ul className="space-y-4 list-triangle">
+        <li>
+          Worked on a comprehensive university management backend system based
+          on NestJS and MongoDB
+        </li>
+        <li>
+          Contributed to the development of modules responsible for financial
+          management, course management and student/personnel administration
+        </li>
+      </ul>
+    ),
   },
 };
 
@@ -60,10 +179,10 @@ export function Experiences() {
   return (
     <section
       id="Experiences"
-      className="min-h-screen w-full text-white flex flex-col items-center px-5"
+      className="min-h-screen pb-20 w-full text-white flex flex-col items-center px-5"
     >
       <div className="relative">
-        <h2 className="text-6xl font-bold mb-2">Experiences</h2>
+        <h2 className="text-5xl font-bold mb-2">Experiences</h2>
         <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[105%] border-dashed-large" />
       </div>
 
@@ -91,8 +210,8 @@ export function Experiences() {
           <div className="flex-1">
             <h3 className="text-2xl font-bold text-cyan mb-1">
               <span className="text-white">{selectedJob.position}</span> @{' '}
-              <a 
-                href={selectedJob.link} 
+              <a
+                href={selectedJob.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative after:absolute after:bg-cyan after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300"
@@ -101,14 +220,7 @@ export function Experiences() {
               </a>
             </h3>
             <p className="text-white/60 mb-6">{selectedJob.period}</p>
-            <ul className="space-y-4">
-              {selectedJob.details.map((detail, index) => (
-                <li key={index} className="flex gap-3 text-white/80">
-                  <span className="text-cyan">▹</span>
-                  {detail}
-                </li>
-              ))}
-            </ul>
+            {selectedJob.details}
           </div>
         )}
       </div>

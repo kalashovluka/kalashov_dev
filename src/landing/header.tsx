@@ -32,7 +32,7 @@ export function Header() {
       <title>{title}</title>
       <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
 
-      <header className="w-full backdrop-blur-md z-1 p-5 gap-5 fixed top-0 font-mono tracking-tighter text-cyan font-medium flex justify-end">
+      <header className="w-full backdrop-blur-md z-1 p-5 gap-7 fixed top-0 font-mono tracking-tighter text-cyan font-medium flex justify-end">
         <Section section="About" isActive={sections.About} />
         <Section section="Experiences" isActive={sections.Experiences} />
         <Section section="Works" isActive={sections.Works} />
