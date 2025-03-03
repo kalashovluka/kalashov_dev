@@ -3,6 +3,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
+  overscroll-behavior: none;
+  @apply bg-dark
 }
 
 body, #root {
@@ -29,31 +31,46 @@ body, #root {
 }
 
 @layer utilities {
-  .text-glow {
-    text-shadow: 0 0 0px #9af5ec,
-                 0 0 0px #9af5ec,
-                 0 0 12px #9af5ec;
-  }
-
   .list-triangle {
     list-style: none;
     padding-left: 1em;
   }
 
-  .list-triangle li {
+  .list-triangle > li {
     position: relative;
   }
 
-  .list-triangle li::before {
+  .list-triangle > li::before {
     content: '';
     position: absolute;
     left: -1em;
-    top: 7px;
+    top: 8px;
     width: 0;
     height: 0;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-left: 8px solid #9af5ec;
+  }
+
+  .list-triangle-sm {
+    list-style: none;
+    padding-left: 1em;
+  }
+
+  .list-triangle-sm > li {
+    position: relative;
+  }
+
+  .list-triangle-sm > li::before {
+    content: '';
+    position: absolute;
+    left: -1em;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid #9af5ec;
   }
 
   .border-dashed-large {

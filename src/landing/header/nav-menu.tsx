@@ -4,7 +4,8 @@ import { Section } from "./section";
 export function NavMenu({ onClose }: { onClose: () => void }) {
   const { activeSection } = useActiveSectionContext();
     
-  return <div className="h-screen w-screen fixed top-0 left-0 bg-dark">
+  return <div className="h-screen w-screen fixed top-0 left-0 z-2 backdrop-blur-lg">
+    <div className="h-full w-full bg-dark absolute top-0 left-0 opacity-50" />
     <button className="absolute top-8 right-8 text-6xl" onClick={onClose}>
       <span className="text-cyan">&times;</span>
     </button>

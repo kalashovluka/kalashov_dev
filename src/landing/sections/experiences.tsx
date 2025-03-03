@@ -17,7 +17,7 @@ const experiences: Record<string, JobExperience> = {
     period: 'Dec 2022 - Jan 2025 · 2 yrs 2 mos',
     details: (
       <>
-        <div className="mt-10 mb-2 text-lg font-bold">
+        <div className="mt-10 mb-2 text-base lg:text-lg font-bold">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -43,7 +43,7 @@ const experiences: Record<string, JobExperience> = {
           </li>
         </ul>
 
-        <div className="mt-10 mb-2 text-lg font-bold">
+        <div className="mt-10 mb-2 text-base lg:text-lg font-bold">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -78,7 +78,7 @@ const experiences: Record<string, JobExperience> = {
     period: 'Jan 2021 - Aug 2022 · 1 yr 8 mos',
     details: (
       <>
-        <div className="mt-10 mb-2 text-lg font-bold">
+        <div className="mt-10 mb-2 text-base lg:text-lg font-bold">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -101,7 +101,7 @@ const experiences: Record<string, JobExperience> = {
           </li>
         </ul>
 
-        <div className="mt-10 mb-2 text-lg font-bold">
+        <div className="mt-10 mb-2 text-base lg:text-lg font-bold">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -128,7 +128,7 @@ const experiences: Record<string, JobExperience> = {
           </li>
         </ul>
 
-        <div className="mt-10 mb-2 text-lg font-bold">
+        <div className="mt-10 mb-2 text-base lg:text-lg font-bold">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -150,8 +150,8 @@ const experiences: Record<string, JobExperience> = {
             >
               Gudabooks
             </a>{' '}
-            and it&apos;s React Native application, featuring e-book store, library and audiobooks
-            online streaming
+            and it&apos;s React Native application, featuring e-book store,
+            library and audiobooks online streaming
           </li>
           <li>
             Developed backend API for{' '}
@@ -203,23 +203,23 @@ export function Experiences() {
   return (
     <section
       id="Experiences"
-      className="min-h-screen w-full text-white flex flex-col items-center"
+      className="min-h-screen w-full text-white flex flex-col items-center pt-5 mt-20"
     >
       <div className="relative">
-        <h2 className="text-5xl font-bold mb-2">Experiences</h2>
+        <h2 className="text-2xl lg:text-4xl font-bold mb-2">Experiences</h2>
         <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[105%] border-dashed-large" />
       </div>
 
-      <div className="w-full max-w-6xl mt-20 flex gap-8">
-        <div className="w-60">
-          <div className="flex flex-col border-l border-cyan">
+      <div className="w-full max-w-6xl mt-10 lg:mt-20 flex flex-col lg:flex-row gap-8 lg:text-base text-xs">
+        <div className="w-full lg:w-60 overflow-x-auto">
+          <div className="flex lg:flex-col border-b lg:border-b-0 lg:border-l border-cyan">
             {Object.entries(experiences).map(([key, value]) => (
               <button
                 key={key}
                 onClick={() => setActiveJob(key)}
-                className={`block cursor-pointer w-full text-left pl-4 py-3 transition-colors hover:text-cyan ${
+                className={`block shrink-0 cursor-pointer text-left px-4 py-3 transition-colors hover:text-cyan whitespace-nowrap ${
                   activeJob === key
-                    ? 'text-cyan border-l-2 border-cyan -ml-[1px]'
+                    ? 'text-cyan border-b-2 lg:border-b-0 lg:border-l-2 border-cyan lg:-ml-[1px]'
                     : 'text-white/60'
                 }`}
               >
@@ -232,15 +232,16 @@ export function Experiences() {
 
         {selectedJob && (
           <div className="flex-1">
-            <h3 className="text-2xl font-bold text-cyan mb-1">
-              <span className="text-white">{selectedJob.position}</span> @{' '}
+            <h3 className="text-base lg:text-2xl font-bold text-cyan mb-1">
+              <span className="text-white">{selectedJob.position} </span>
+              <br className="lg:hidden" /> 
               <a
                 href={selectedJob.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative after:absolute after:bg-cyan after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300"
               >
-                {selectedJob.company}
+                @ {selectedJob.company}
               </a>
             </h3>
             <p className="text-white/60 mb-6">{selectedJob.period}</p>

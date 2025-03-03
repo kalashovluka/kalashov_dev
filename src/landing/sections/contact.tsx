@@ -39,20 +39,21 @@ export function Contact() {
   return (
     <section
       id="Contact"
-      className="min-h-screen w-full text-white flex flex-col items-center pt-20"
+      className="min-h-screen w-full text-white flex flex-col items-center pt-5 mt-20"
     >
       <div className="relative">
-        <h2 className="text-5xl font-bold mb-2">Contact Me</h2>
+        <h2 className="text-2xl lg:text-4xl font-bold mb-2">Contact Me</h2>
         <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[105%] border-dashed-large" />
       </div>
 
-      <div className="mt-10 max-w-3xl">
-        <p>
+      <div className="mt-10 max-w-3xl max-lg:text-sm">
+        <p className='text-center lg:px-4'>
           I am always happy to explore new opportunities and collaborate on
           exciting projects. If you have any questions or would like to discuss
           a potential collaboration, please don&apos;t hesitate to reach out.
         </p>
 
+        <div className='flex justify-center w-full'>
         <div className="inline-grid grid-cols-[auto_1fr] mt-10 gap-y-2 gap-x-5">
           <Link
             title="LinkedIn"
@@ -78,6 +79,8 @@ export function Contact() {
             t.me/kalashovluka
           </Link>
         </div>
+        </div>
+        
       </div>
     </section>
   );

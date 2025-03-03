@@ -13,9 +13,7 @@ export function Section({
     <a
       href={`#${section}`}
       onClick={onClick}
-      className={`transition-all duration-300 capitalize relative group ${
-        isActive ? 'text-glow' : ''
-      }`}
+      className={`transition-all duration-300 capitalize relative text-cyan group`}
     >
       {`<${section} />`}
       <span

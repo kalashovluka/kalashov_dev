@@ -10,8 +10,8 @@ export function Landing() {
     <ActiveSectionProvider>
       <Header />
 
-      <div className="flex flex-col items-center h-full min-h-screen w-full bg-dark font-mono">
-        <div className="max-w-5xl w-5xl px-5">
+      <div className="flex flex-col items-center h-full min-h-screen w-full font-mono">
+        <div className="lg:max-w-5xl lg:w-5xl w-screen max-w-screen px-5">
           <About />
           <Experiences />
           <Works />
