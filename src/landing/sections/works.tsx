@@ -93,7 +93,7 @@ export function Works() {
             Ally revolutionizes the way you connect with new acquaintances.
             <br />
             With our app, users import and classify their phonebook contacts to
-            get effective and optimal "THE-RIGHT-6-PEOPLE" chains in seconds.
+            get effective and optimal &quot;THE-RIGHT-6-PEOPLE&quot; chains in seconds.
           </div>
           <div className="flex gap-5 text-sm text-[#d5ddf6] mt-5">
             <div>React Native</div>
