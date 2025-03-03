@@ -1,9 +1,11 @@
-import { useState } from "react";
-import { JOBS } from "./jobs";
+import { JOBS } from './jobs';
 
-export function JobsNavigation() {
-  const [activeJob, setActiveJob] = useState<string>(Object.keys(JOBS)[0]);
+type Props = {
+  activeJob: string;
+  setActiveJob: (job: string) => void;
+};
 
+export function JobsNavigation({ activeJob, setActiveJob }: Props) {
   return (
     <div className="w-full lg:w-60 overflow-x-auto">
       <div className="flex lg:flex-col border-b lg:border-b-0 lg:border-l border-cyan">

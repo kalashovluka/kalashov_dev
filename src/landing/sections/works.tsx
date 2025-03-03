@@ -26,9 +26,9 @@ export function Works() {
             src="/previews/norwex-preview.jpg"
           />
         </a>
-        <div className="flex flex-col items-end justify-center relative w-full">
+        <div className="flex flex-col items-end justify-center relative w-full z-1">
           <div className="text-2xl font-bold">Norwex USA</div>
-          <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
+          <div className="bg-[#132438b6] rounded-md p-4 w-lg mt-5">
             A global direct sales company, allowing individuals to become
             Independent Sales Consultants and offer Norwex products through
             personal networks and events
@@ -63,9 +63,9 @@ export function Works() {
             loading="lazy"
           />
         </a>
-        <div className="flex flex-col items-start justify-center relative w-full">
+        <div className="flex flex-col items-start justify-center relative w-full z-1">
           <div className="text-2xl font-bold">HOWL Creator App</div>
-          <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
+          <div className="bg-[#132438b6] rounded-md p-4 w-lg mt-5">
             Howl is a marketplace for commerce creators. We build tools for
             creators on every social platform to earn more and grow their
             community faster.
@@ -96,9 +96,9 @@ export function Works() {
             src="/previews/viaro-preview.jpg"
           />
         </a>
-        <div className="flex flex-col items-end justify-center relative w-full">
+        <div className="flex flex-col items-end justify-center relative w-full z-1">
           <div className="text-2xl font-bold">VIARO</div>
-          <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
+          <div className="bg-[#132438b6] rounded-md p-4 w-lg mt-5">
             What was created to facilitate human movement, should not become an
             obstacle on the road. <br /> VIARO - car parts online marketplace.
           </div>
@@ -132,9 +132,9 @@ export function Works() {
             loading="lazy"
           />
         </a>
-        <div className="flex flex-col items-start justify-center relative w-full">
+        <div className="flex flex-col items-start justify-center relative w-full z-1">
           <div className="text-2xl font-bold">Ally: Connect with anyone</div>
-          <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
+          <div className="bg-[#132438b6] rounded-md p-4 w-lg mt-5">
             Ally revolutionizes the way you connect with new acquaintances.
             <br />
             With our app, users import and classify their phonebook contacts to
@@ -174,9 +174,9 @@ export function Works() {
             loading="lazy"
           />
         </a>
-        <div className="flex flex-col items-end justify-center relative w-full">
+        <div className="flex flex-col items-end justify-center relative w-full z-1">
           <div className="text-2xl font-bold">PalitraL Online Store</div>
-          <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
+          <div className="bg-[#132438b6] rounded-md p-4 w-lg mt-5">
             PalitraL Publishing was founded in 2005 with a mission of bridging
             the gap between Georgian readers and books. Today it boasts the
             title of the largest and most successful enterprise in the Georgian
@@ -211,9 +211,9 @@ export function Works() {
             loading="lazy"
           />
         </a>
-        <div className="flex flex-col items-start justify-center relative w-full">
+        <div className="flex flex-col items-start justify-center relative w-full z-1">
           <div className="text-2xl font-bold">Guda Audio Books</div>
-          <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
+          <div className="bg-[#132438b6] rounded-md p-4 w-lg mt-5">
             The most popular Georgian e-book reading and listening application
           </div>
           <div className="flex gap-5 text-sm text-[#d5ddf6] mt-2">

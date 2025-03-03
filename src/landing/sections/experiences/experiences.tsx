@@ -5,8 +5,8 @@ import { JobsNavigation } from './jobs-navigation';
 
 export function Experiences() {
   useActiveSection('Experiences');
-  
-  const [activeJob] = useState<string>(Object.keys(JOBS)[0]);
+
+  const [activeJob, setActiveJob] = useState<string>(Object.keys(JOBS)[0]);
   const selectedJob = JOBS[activeJob];
 
   return (
@@ -20,7 +20,7 @@ export function Experiences() {
       </div>
 
       <div className="w-full max-w-6xl mt-10 lg:mt-20 flex flex-col lg:flex-row gap-8 lg:text-base text-xs">
-       <JobsNavigation />
+        <JobsNavigation activeJob={activeJob} setActiveJob={setActiveJob} />
 
         {selectedJob && (
           <div className="flex-1">
