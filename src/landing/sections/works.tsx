@@ -13,10 +13,10 @@ export function Works() {
         <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[105%] border-dashed-large" />
       </div>
 
-      <div className="flex w-full mt-20 min-h-96 relative group">
+      <div className="flex w-full mt-20 min-h-96 relative">
         <img
           loading="lazy"
-          className="absolute z-1 cursor-pointer left-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 group-hover:brightness-100 brightness-[0.2]"
+          className="absolute z-1 cursor-pointer left-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
           src="/previews/norwex-preview.jpg"
         />
         <div className="flex flex-col items-end justify-center relative w-full">
@@ -36,9 +36,9 @@ export function Works() {
         </div>
       </div>
 
-      <div className="flex w-full mt-10 min-h-96 relative group">
+      <div className="flex w-full mt-10 min-h-96 relative">
         <img
-          className="absolute right-10 top-10 w-xl h-80 rounded-lg z-1 cursor-pointer transition-all duration-300 group-hover:brightness-100 brightness-[0.2]"
+          className="absolute right-10 top-10 w-xl h-80 rounded-lg z-1 cursor-pointer transition-all duration-300 hover:brightness-100 brightness-[0.2]"
           src="/previews/howl-preview.jpg"
           loading="lazy"
         />
@@ -59,10 +59,10 @@ export function Works() {
         </div>
       </div>
 
-      <div className="flex w-full mt-10 min-h-96 relative group">
+      <div className="flex w-full mt-10 min-h-96 relative">
         <img
           loading="lazy"
-          className="absolute z-1 cursor-pointer left-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 group-hover:brightness-100 brightness-[0.2]"
+          className="absolute z-1 cursor-pointer left-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
           src="/previews/viaro-preview.jpg"
         />
         <div className="flex flex-col items-end justify-center relative w-full">
@@ -81,9 +81,9 @@ export function Works() {
         </div>
       </div>
 
-      <div className="flex w-full mt-10 min-h-96 relative group">
+      <div className="flex w-full mt-10 min-h-96 relative">
         <img
-          className="absolute z-1 cursor-pointer right-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 group-hover:brightness-100 brightness-[0.2]"
+          className="absolute z-1 cursor-pointer right-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
           src="/previews/ally-preview.jpg"
           loading="lazy"
         />
@@ -108,9 +108,9 @@ export function Works() {
         </div>
       </div>
 
-      <div className="flex w-full mt-10 min-h-96 relative group">
+      <div className="flex w-full mt-10 min-h-96 relative">
         <img
-          className="absolute z-1 cursor-pointer left-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 group-hover:brightness-100 brightness-[0.2]"
+          className="absolute z-1 cursor-pointer left-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
           src="/previews/palitral-preview.jpg"
           loading="lazy"
         />
@@ -131,9 +131,9 @@ export function Works() {
         </div>
       </div>
 
-      <div className="flex w-full mt-10 min-h-96 relative group">
+      <div className="flex w-full mt-10 min-h-96 relative">
         <img
-          className="absolute z-1 cursor-pointer right-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 group-hover:brightness-100 brightness-[0.2]"
+          className="absolute z-1 cursor-pointer right-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
           src="/previews/gudabooks-preview.jpg"
           loading="lazy"
         />
