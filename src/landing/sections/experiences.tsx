@@ -217,7 +217,7 @@ export function Experiences() {
               <button
                 key={key}
                 onClick={() => setActiveJob(key)}
-                className={`block w-full text-left pl-4 py-3 transition-colors hover:text-cyan ${
+                className={`block cursor-pointer w-full text-left pl-4 py-3 transition-colors hover:text-cyan ${
                   activeJob === key
                     ? 'text-cyan border-l-2 border-cyan -ml-[1px]'
                     : 'text-white/60'

@@ -6,10 +6,10 @@ export function Works() {
   return (
     <section
       id="Works"
-      className="min-h-screen w-full text-white flex flex-col items-center px-5 pb-20"
+      className="min-h-screen w-full text-white flex flex-col items-center px-5 mt-20"
     >
       <div className="relative">
-        <h2 className="text-5xl font-bold mb-2">Works</h2>
+        <h2 className="text-5xl font-bold mb-2">Featured Projects</h2>
         <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[105%] border-dashed-large" />
       </div>
 
@@ -79,11 +79,14 @@ export function Works() {
             With our app, users import and classify their phonebook contacts to
             get effective and optimal "THE-RIGHT-6-PEOPLE" chains in seconds.
           </div>
-          <div className="flex gap-5 text-sm text-[#d5ddf6] mt-2">
+          <div className="flex gap-5 text-sm text-[#d5ddf6] mt-5">
+            <div>React Native</div>
             <div>Node.js</div>
             <div>NestJS</div>
-            <div>Neo4j</div>
             <div>PostgreSQL</div>
+          </div>
+          <div className="flex gap-5 text-sm text-[#d5ddf6] mt-2">
+            <div>Neo4j</div>
             <div>ElasticSearch</div>
           </div>
         </div>
@@ -116,6 +119,7 @@ export function Works() {
             The most popular Georgian e-book reading and listening application
           </div>
           <div className="flex gap-5 text-sm text-[#d5ddf6] mt-2">
+            <div>React Native</div>
             <div>Node.js</div>
             <div>NestJS</div>
             <div>MySQL</div>

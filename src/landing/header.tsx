@@ -16,9 +16,11 @@ function Section({
       }`}
     >
       {`<${section} />`}
-      <span className={`absolute -bottom-1 left-0 h-[1px] bg-cyan transition-all duration-300 ${
-        isActive ? 'w-full' : 'w-0 group-hover:w-full'
-      }`} />
+      <span
+        className={`absolute -bottom-1 left-0 h-[1px] bg-cyan transition-all duration-300 ${
+          isActive ? 'w-full' : 'w-0 group-hover:w-full'
+        }`}
+      />
     </a>
   );
 }
@@ -32,11 +34,17 @@ export function Header() {
       <title>{title}</title>
       <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
 
-      <header className="w-full backdrop-blur-lg z-2 p-5 gap-7 fixed top-0 font-mono tracking-tighter text-cyan font-medium flex justify-end">
-        <Section section="About" isActive={activeSection === 'About'} />
-        <Section section="Experiences" isActive={activeSection === 'Experiences'} />
-        <Section section="Works" isActive={activeSection === 'Works'} />
-        <Section section="Contact" isActive={activeSection === 'Contact'} />
+      <header className="w-full backdrop-blur-lg z-2 p-5 fixed top-0 font-mono tracking-tighter text-cyan font-medium flex justify-between">
+        <p className='text-xl font-bold text-white'>Luka Kalashov</p>
+        <div className='flex gap-5'>
+          <Section section="About" isActive={activeSection === 'About'} />
+          <Section
+            section="Experiences"
+            isActive={activeSection === 'Experiences'}
+          />
+          <Section section="Works" isActive={activeSection === 'Works'} />
+          <Section section="Contact" isActive={activeSection === 'Contact'} />
+        </div>
       </header>
     </>
   );
