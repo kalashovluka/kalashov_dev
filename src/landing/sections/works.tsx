@@ -14,7 +14,11 @@ export function Works() {
       </div>
 
       <div className="flex w-full mt-20 min-h-96 relative">
-        <div className="absolute left-10 top-10 bg-black w-xl h-80 rounded-lg"></div>
+        <img
+          loading='lazy'
+          className="absolute left-10 top-10 w-xl h-80 rounded-lg"
+          src="/previews/norwex-preview.jpg"
+        />
         <div className="flex flex-col items-end justify-center relative w-full">
           <div className="text-2xl font-bold">Norwex USA</div>
           <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
@@ -33,7 +37,11 @@ export function Works() {
       </div>
 
       <div className="flex w-full mt-10 min-h-96 relative">
-        <div className="absolute right-10 top-10 bg-black w-xl h-80 rounded-lg"></div>
+        <img
+          className="absolute right-10 top-10 bg-black w-xl h-80 rounded-lg"
+          src="/previews/howl-preview.jpg"
+          loading='lazy'
+        />
         <div className="flex flex-col items-start justify-center relative w-full">
           <div className="text-2xl font-bold">HOWL Creator App</div>
           <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
@@ -52,7 +60,11 @@ export function Works() {
       </div>
 
       <div className="flex w-full mt-10 min-h-96 relative">
-        <div className="absolute left-10 top-10 bg-black w-xl h-80 rounded-lg"></div>
+        <img
+          loading="lazy"
+          className="absolute left-10 top-10 bg-black w-xl h-80 rounded-lg"
+          src="/previews/viaro-preview.jpg"
+        />
         <div className="flex flex-col items-end justify-center relative w-full">
           <div className="text-2xl font-bold">VIARO</div>
           <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
@@ -70,7 +82,11 @@ export function Works() {
       </div>
 
       <div className="flex w-full mt-10 min-h-96 relative">
-        <div className="absolute right-10 top-10 bg-black w-xl h-80 rounded-lg"></div>
+        <img
+          className="absolute right-10 top-10 bg-black w-xl h-80 rounded-lg"
+          src="/previews/ally-preview.jpg"
+          loading="lazy"
+        />
         <div className="flex flex-col items-start justify-center relative w-full">
           <div className="text-2xl font-bold">Ally: Connect with anyone</div>
           <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
@@ -93,7 +109,11 @@ export function Works() {
       </div>
 
       <div className="flex w-full mt-10 min-h-96 relative">
-        <div className="absolute left-10 top-10 bg-black w-xl h-80 rounded-lg"></div>
+        <img
+          className="absolute left-10 top-10 bg-black w-xl h-80 rounded-lg"
+          src="/previews/palitral-preview.jpg"
+          loading="lazy"
+        />
         <div className="flex flex-col items-end justify-center relative w-full">
           <div className="text-2xl font-bold">PalitraL Online Store</div>
           <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
@@ -112,7 +132,11 @@ export function Works() {
       </div>
 
       <div className="flex w-full mt-10 min-h-96 relative">
-        <div className="absolute right-10 top-10 bg-black w-xl h-80 rounded-lg"></div>
+        <img
+          className="absolute right-10 top-10 bg-black w-xl h-80 rounded-lg"
+          src="/previews/gudabooks-preview.jpg"
+          loading="lazy"
+        />
         <div className="flex flex-col items-start justify-center relative w-full">
           <div className="text-2xl font-bold">Guda Audio Books</div>
           <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
