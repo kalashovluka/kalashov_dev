@@ -10,11 +10,13 @@ export function Landing() {
     <ActiveSectionProvider>
       <Header />
 
-      <div className="flex flex-col h-full min-h-screen w-full bg-dark font-mono">
-        <About />
-        <Experiences />
-        <Works />
-        <Contact />
+      <div className="flex flex-col items-center h-full min-h-screen w-full bg-dark font-mono">
+        <div className="max-w-6xl w-6xl px-5">
+          <About />
+          <Experiences />
+          <Works />
+          <Contact />
+        </div>
       </div>
     </ActiveSectionProvider>
   );

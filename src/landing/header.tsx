@@ -24,7 +24,7 @@ function Section({
 }
 
 export function Header() {
-  const { sections, activeSection } = useActiveSectionContext();
+  const { activeSection } = useActiveSectionContext();
   const title = `Luka Kalashov | ${activeSection}`;
 
   return (
@@ -32,11 +32,11 @@ export function Header() {
       <title>{title}</title>
       <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
 
-      <header className="w-full backdrop-blur-md z-1 p-5 gap-7 fixed top-0 font-mono tracking-tighter text-cyan font-medium flex justify-end">
-        <Section section="About" isActive={sections.About} />
-        <Section section="Experiences" isActive={sections.Experiences} />
-        <Section section="Works" isActive={sections.Works} />
-        <Section section="Contact" isActive={sections.Contact} />
+      <header className="w-full backdrop-blur-lg z-2 p-5 gap-7 fixed top-0 font-mono tracking-tighter text-cyan font-medium flex justify-end">
+        <Section section="About" isActive={activeSection === 'About'} />
+        <Section section="Experiences" isActive={activeSection === 'Experiences'} />
+        <Section section="Works" isActive={activeSection === 'Works'} />
+        <Section section="Contact" isActive={activeSection === 'Contact'} />
       </header>
     </>
   );

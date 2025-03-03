@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { useActiveSectionContext } from '../context/active-section.context';
 import type { SectionName } from '../context/active-sections.types';
 
-export function useActiveSection(sectionId: SectionName, threshold = 0.5) {
+export function useActiveSection(sectionId: SectionName, threshold = 0.2) {
   const { setSection, sections } = useActiveSectionContext();
   const sectionsRef = useRef(sections);
   sectionsRef.current = sections;

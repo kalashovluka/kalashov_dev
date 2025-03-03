@@ -99,8 +99,49 @@ const experiences: Record<string, JobExperience> = {
             foreign supplier services and numerous banking and delivery
             solutions
           </li>
-          <li className="mt-14">
-            Spearheaded creation of React Native application for{' '}
+        </ul>
+
+        <div className="mt-10 mb-2 text-lg font-bold">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative text-cyan underline"
+            href="https://www.linkedin.com/company/allyconnect/"
+          >
+            Ally
+          </a>{' '}
+          · Contract
+        </div>
+        <ul className="space-y-4 list-triangle">
+          <li>Reworked backend API for Ally, Georgian social networking app</li>
+          <li>
+            Migrated from AWS Neptune to Neo4j database, reducing operational
+            costs
+          </li>
+          <li>
+            Implemented caching layer and used Dijkstra's algorithm to
+            drastically improve performance and reduce pathfinding time from
+            about 10 minutes to 15-30 seconds
+          </li>
+          <li>
+            Worked closely with product to design and implement enhanced UI
+          </li>
+        </ul>
+
+        <div className="mt-10 mb-2 text-lg font-bold">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative text-cyan underline"
+            href="https://www.linkedin.com/company/allyconnect/"
+          >
+            PalitraL Publishing
+          </a>{' '}
+          · Contract
+        </div>
+        <ul className="space-y-4 list-triangle">
+          <li>
+            Developed backend API for{' '}
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -108,12 +149,12 @@ const experiences: Record<string, JobExperience> = {
               href="https://gudabooks.ge/"
             >
               Gudabooks
-            </a>
-            , featuring e-book store, e-book library and audiobooks online
-            streaming
+            </a>{' '}
+            and it's React Native application, featuring e-book store, library and audiobooks
+            online streaming
           </li>
           <li>
-            Participated in creation of online store for{' '}
+            Developed backend API for{' '}
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -121,28 +162,11 @@ const experiences: Record<string, JobExperience> = {
               href="https://www.palitral.ge/"
             >
               PalitraL Publishing
-            </a>
+            </a>{' '}
+            online store
           </li>
           <li>
-            Worked on modernizing and enhancing popular Georgian online stores,
-            such as{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative text-cyan underline"
-              href="https://ebg.ge/"
-            >
-              Ebg.ge
-            </a>{' '}
-            and{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative text-cyan underline"
-              href="https://order24.ge/"
-            >
-              Order24.ge
-            </a>
+            Implemented integrations with banking APIs and delivery services
           </li>
         </ul>
       </>
@@ -179,7 +203,7 @@ export function Experiences() {
   return (
     <section
       id="Experiences"
-      className="min-h-screen pb-20 w-full text-white flex flex-col items-center px-5"
+      className="min-h-screen w-full text-white flex flex-col items-center"
     >
       <div className="relative">
         <h2 className="text-5xl font-bold mb-2">Experiences</h2>
