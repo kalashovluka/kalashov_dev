@@ -1,4 +1,5 @@
 import { useActiveSection } from '../context/use-active-section';
+import { LinkIcon } from '../icons/link.icon';
 
 export function Works() {
   useActiveSection('Works');
@@ -14,11 +15,17 @@ export function Works() {
       </div>
 
       <div className="flex w-full mt-20 min-h-96 relative">
-        <img
-          loading="lazy"
-          className="absolute z-1 cursor-pointer left-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
-          src="/previews/norwex-preview.jpg"
-        />
+        <a
+          href="https://my.norwex.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            loading="lazy"
+            className="absolute z-1 cursor-pointer left-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
+            src="/previews/norwex-preview.jpg"
+          />
+        </a>
         <div className="flex flex-col items-end justify-center relative w-full">
           <div className="text-2xl font-bold">Norwex USA</div>
           <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
@@ -33,15 +40,29 @@ export function Works() {
             <div>MobX</div>
             <div>TypeScript</div>
           </div>
+          <a
+            className="relative -right-1 w-6 h-6 mt-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://my.norwex.com/"
+          >
+            <LinkIcon />
+          </a>
         </div>
       </div>
 
       <div className="flex w-full mt-10 min-h-96 relative">
-        <img
-          className="absolute right-10 top-10 w-xl h-80 rounded-lg z-1 cursor-pointer transition-all duration-300 hover:brightness-100 brightness-[0.2]"
-          src="/previews/howl-preview.jpg"
-          loading="lazy"
-        />
+        <a
+          href="https://www.howl.link/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="absolute right-10 top-10 w-xl h-80 rounded-lg z-1 cursor-pointer transition-all duration-300 hover:brightness-100 brightness-[0.2]"
+            src="/previews/howl-preview.jpg"
+            loading="lazy"
+          />
+        </a>
         <div className="flex flex-col items-start justify-center relative w-full">
           <div className="text-2xl font-bold">HOWL Creator App</div>
           <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
@@ -56,15 +77,25 @@ export function Works() {
             <div>TailwindCSS</div>
             <div>TypeScript</div>
           </div>
+          <a
+            className="relative -left-1 w-6 h-6 mt-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.howl.link/"
+          >
+            <LinkIcon />
+          </a>
         </div>
       </div>
 
       <div className="flex w-full mt-10 min-h-96 relative">
-        <img
-          loading="lazy"
-          className="absolute z-1 cursor-pointer left-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
-          src="/previews/viaro-preview.jpg"
-        />
+        <a href="https://viaro.ge/" target="_blank" rel="noopener noreferrer">
+          <img
+            loading="lazy"
+            className="absolute z-1 cursor-pointer left-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
+            src="/previews/viaro-preview.jpg"
+          />
+        </a>
         <div className="flex flex-col items-end justify-center relative w-full">
           <div className="text-2xl font-bold">VIARO</div>
           <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
@@ -78,22 +109,37 @@ export function Works() {
             <div>TailwindCSS</div>
             <div>TypeScript</div>
           </div>
+          <a
+            className="relative -right-1 w-6 h-6 mt-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://viaro.ge/"
+          >
+            <LinkIcon />
+          </a>
         </div>
       </div>
 
       <div className="flex w-full mt-10 min-h-96 relative">
-        <img
-          className="absolute z-1 cursor-pointer right-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
-          src="/previews/ally-preview.jpg"
-          loading="lazy"
-        />
+        <a
+          href="https://www.allyapp.one/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="absolute z-1 cursor-pointer right-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
+            src="/previews/ally-preview.jpg"
+            loading="lazy"
+          />
+        </a>
         <div className="flex flex-col items-start justify-center relative w-full">
           <div className="text-2xl font-bold">Ally: Connect with anyone</div>
           <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
             Ally revolutionizes the way you connect with new acquaintances.
             <br />
             With our app, users import and classify their phonebook contacts to
-            get effective and optimal &quot;THE-RIGHT-6-PEOPLE&quot; chains in seconds.
+            get effective and optimal &quot;THE-RIGHT-6-PEOPLE&quot; chains in
+            seconds.
           </div>
           <div className="flex gap-5 text-sm text-[#d5ddf6] mt-5">
             <div>React Native</div>
@@ -105,15 +151,29 @@ export function Works() {
             <div>Neo4j</div>
             <div>ElasticSearch</div>
           </div>
+          <a
+            className="relative -left-1 w-6 h-6 mt-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.allyapp.one/"
+          >
+            <LinkIcon />
+          </a>
         </div>
       </div>
 
       <div className="flex w-full mt-10 min-h-96 relative">
-        <img
-          className="absolute z-1 cursor-pointer left-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
-          src="/previews/palitral-preview.jpg"
-          loading="lazy"
-        />
+        <a
+          href="https://palitral.ge/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="absolute z-1 cursor-pointer left-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
+            src="/previews/palitral-preview.jpg"
+            loading="lazy"
+          />
+        </a>
         <div className="flex flex-col items-end justify-center relative w-full">
           <div className="text-2xl font-bold">PalitraL Online Store</div>
           <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
@@ -128,15 +188,29 @@ export function Works() {
             <div>MySQL</div>
             <div>RESTful API</div>
           </div>
+          <a
+            className="relative -right-1 w-6 h-6 mt-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://palitral.ge/"
+          >
+            <LinkIcon />
+          </a>
         </div>
       </div>
 
       <div className="flex w-full mt-10 min-h-96 relative">
-        <img
-          className="absolute z-1 cursor-pointer right-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
-          src="/previews/gudabooks-preview.jpg"
-          loading="lazy"
-        />
+        <a
+          href="https://gudabooks.ge/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="absolute z-1 cursor-pointer right-10 top-10 w-xl h-80 rounded-lg transition-all duration-300 hover:brightness-100 brightness-[0.2]"
+            src="/previews/gudabooks-preview.jpg"
+            loading="lazy"
+          />
+        </a>
         <div className="flex flex-col items-start justify-center relative w-full">
           <div className="text-2xl font-bold">Guda Audio Books</div>
           <div className="bg-[#13243878] rounded-md p-4 w-lg z-1 mt-5">
@@ -149,6 +223,14 @@ export function Works() {
             <div>MySQL</div>
             <div>RESTful API</div>
           </div>
+          <a
+            className="relative -left-1 w-6 h-6 mt-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://gudabooks.ge/"
+          >
+            <LinkIcon />
+          </a>
         </div>
       </div>
     </section>
