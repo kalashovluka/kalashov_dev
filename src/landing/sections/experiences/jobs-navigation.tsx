@@ -17,7 +17,7 @@ function scrollToCenter(element: HTMLElement): void {
 export function JobsNavigation({ activeJob, setActiveJob }: Props) {
   return (
     <div className="w-full lg:w-60 overflow-x-auto scroll-smooth">
-      <div className="flex lg:flex-col border-b lg:border-b-0 lg:border-l border-cyan">
+      <div className="flex lg:flex-col lg:border-b-0 lg:border-l border-cyan">
         {Object.entries(JOBS).map(([key, value]) => (
           <button
             key={key}

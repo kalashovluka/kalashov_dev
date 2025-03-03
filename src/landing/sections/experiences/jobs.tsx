@@ -13,7 +13,7 @@ export const JOBS: Record<string, JobExperience> = {
     position: 'Front End Developer',
     company: 'Team Brilliant',
     link: 'https://www.linkedin.com/company/teambrilliant',
-    period: 'Dec 2022 - Jan 2025 · 2 yrs 2 mos',
+    period: 'Mar 2022 - Jan 2025 · 2 yrs 11 mos',
     details: (
       <>
         <div className="mt-10 mb-2 text-base lg:text-lg font-bold">
@@ -27,7 +27,7 @@ export const JOBS: Record<string, JobExperience> = {
           </a>{' '}
           · Contract
         </div>
-        <ul className="space-y-4 list-triangle">
+        <ul className="space-y-4 list-triangle-sm lg:list-triangle">
           <li>
             Worked on enhancing and modernizing web resources for Norwex - a
             global direct sales company
@@ -53,7 +53,7 @@ export const JOBS: Record<string, JobExperience> = {
           </a>{' '}
           · Contract
         </div>
-        <ul className="space-y-4 list-triangle">
+        <ul className="space-y-4 list-triangle-sm lg:list-triangle">
           <li>
             Developed a cross-platform React Native application for Howl, social
             commerce platform that connects brands with creators
@@ -74,7 +74,7 @@ export const JOBS: Record<string, JobExperience> = {
     position: 'Full Stack Developer',
     company: 'Spinom',
     link: 'https://www.linkedin.com/company/spinom',
-    period: 'Jan 2021 - Aug 2022 · 1 yr 8 mos',
+    period: 'Jul 2020 - Feb 2022 · 1 yr 8 mos',
     details: (
       <>
         <div className="mt-10 mb-2 text-base lg:text-lg font-bold">
@@ -88,7 +88,7 @@ export const JOBS: Record<string, JobExperience> = {
           </a>{' '}
           · Contract
         </div>
-        <ul className="space-y-4 list-triangle">
+        <ul className="space-y-4 list-triangle-sm lg:list-triangle">
           <li>
             Lead development of VIARO, innovative Georgian autoparts marketplace
           </li>
@@ -111,7 +111,7 @@ export const JOBS: Record<string, JobExperience> = {
           </a>{' '}
           · Contract
         </div>
-        <ul className="space-y-4 list-triangle">
+        <ul className="space-y-4 list-triangle-sm lg:list-triangle">
           <li>Reworked backend API for Ally, Georgian social networking app</li>
           <li>
             Migrated from AWS Neptune to Neo4j database, reducing operational
@@ -138,7 +138,7 @@ export const JOBS: Record<string, JobExperience> = {
           </a>{' '}
           · Contract
         </div>
-        <ul className="space-y-4 list-triangle">
+        <ul className="space-y-4 list-triangle-sm lg:list-triangle">
           <li>
             Developed backend API for{' '}
             <a
@@ -175,9 +175,9 @@ export const JOBS: Record<string, JobExperience> = {
     position: 'Back End Developer',
     company: 'Lupi AI',
     link: 'https://www.linkedin.com/company/lupiai',
-    period: 'Jun 2019 - Jan 2021 · 1 yr 8 mos',
+    period: 'Nov 2018 - Jun 2020 · 1 yr 8 mos',
     details: (
-      <ul className="space-y-4 list-triangle">
+      <ul className="space-y-4 list-triangle-sm lg:list-triangle">
         <li>
           Worked on a comprehensive university management backend system based
           on NestJS and MongoDB

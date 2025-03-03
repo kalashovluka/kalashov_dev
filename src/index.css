@@ -1,12 +1,13 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 html {
   scroll-behavior: smooth;
   overscroll-behavior: none;
-  @apply bg-dark
+  @apply bg-dark;
 }
 
-body, #root {
+body,
+#root {
   margin: 0;
   height: 100%;
   width: 100vw;
@@ -29,56 +30,58 @@ body, #root {
   }
 }
 
-@layer utilities {
-  .list-triangle {
-    list-style: none;
-    padding-left: 1em;
-  }
+@utility list-triangle {
+  list-style: none;
+  padding-left: 1em;
 
-  .list-triangle > li {
+  & > li {
     position: relative;
   }
 
-  .list-triangle > li::before {
+  & > li::before {
     content: '';
     position: absolute;
     left: -1em;
-    top: 8px;
+    top: 7px;
     width: 0;
     height: 0;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-left: 8px solid #9af5ec;
   }
+}
 
-  .list-triangle-sm {
-    list-style: none;
-    padding-left: 1em;
-  }
+@utility list-triangle-sm {
+  list-style: none;
+  padding-left: 1em;
 
-  .list-triangle-sm > li {
+  & > li {
     position: relative;
   }
 
-  .list-triangle-sm > li::before {
+  & > li::before {
     content: '';
     position: absolute;
     left: -1em;
-    top: 5px;
+    top: 4px;
     width: 0;
     height: 0;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
     border-left: 6px solid #9af5ec;
   }
+}
 
-  .border-dashed-large {
-    border: none;
-    background-image: linear-gradient(to right, var(--color-cyan) 50%, transparent 50%);
-    background-position: bottom;
-    background-size: 15px 2px;
-    background-repeat: repeat-x;
-    padding-bottom: 4px;
-    position: relative;
-  }
+.border-dashed-large {
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    var(--color-cyan) 50%,
+    transparent 50%
+  );
+  background-position: bottom;
+  background-size: 15px 2px;
+  background-repeat: repeat-x;
+  padding-bottom: 4px;
+  position: relative;
 }

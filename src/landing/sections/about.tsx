@@ -9,8 +9,8 @@ export function About() {
       className="min-h-screen w-full text-white justify-center items-center flex py-20"
     >
       <div className="lg:max-w-4xl w-full">
-        <p className="text-sm">Hello There! My name is Luka and I am a</p>
-        <div className="font-bold text-4xl lg:text-8xl my-2 flex flex-wrap items-center">
+        <p className="text-sm">Hello There! <br className='lg:hidden' /> My name is Luka and I am a</p>
+        <div className="font-bold text-4xl lg:text-[110px] my-2 flex flex-wrap items-center">
           WEB DEVELOPER
           <div className="relative left-2 lg:left-5 w-3 lg:w-6 h-8 lg:h-20 animate-cursor-blink" />
         </div>
