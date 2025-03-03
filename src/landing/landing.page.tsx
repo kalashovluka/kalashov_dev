@@ -2,7 +2,7 @@ import { About } from './sections/about';
 import { Contact } from './sections/contact';
 import { Experiences } from './sections/experiences/experiences';
 import { Header } from './header/header';
-import { Works } from './sections/works';
+import { Works } from './sections/works/works';
 import { ActiveSectionProvider } from './context/active-section.context';
 
 export function Landing() {
