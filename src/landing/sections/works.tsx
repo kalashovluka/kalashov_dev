@@ -7,7 +7,7 @@ export function Works() {
   return (
     <section
       id="Works"
-      className="min-h-screen w-full text-white flex flex-col items-center pt-5 mt-20"
+      className="min-h-screen w-full text-white flex flex-col items-center pt-20"
     >
       <div className="relative">
         <h2 className="text-2xl lg:text-4xl font-bold mb-2">Featured Projects</h2>

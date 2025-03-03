@@ -39,7 +39,7 @@ export function Contact() {
   return (
     <section
       id="Contact"
-      className="min-h-screen w-full text-white flex flex-col items-center pt-5 mt-20"
+      className="min-h-screen w-full text-white flex flex-col items-center justify-center"
     >
       <div className="relative">
         <h2 className="text-2xl lg:text-4xl font-bold mb-2">Contact Me</h2>

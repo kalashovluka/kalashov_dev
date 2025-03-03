@@ -1,6 +1,6 @@
 import { About } from './sections/about';
 import { Contact } from './sections/contact';
-import { Experiences } from './sections/experiences';
+import { Experiences } from './sections/experiences/experiences';
 import { Header } from './header/header';
 import { Works } from './sections/works';
 import { ActiveSectionProvider } from './context/active-section.context';

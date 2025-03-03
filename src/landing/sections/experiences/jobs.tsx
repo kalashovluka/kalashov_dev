@@ -1,7 +1,6 @@
-import { ReactElement, useState } from 'react';
-import { useActiveSection } from '../context/use-active-section';
+import { ReactElement } from "react";
 
-type JobExperience = {
+export type JobExperience = {
   position: string;
   company: string;
   link: string;
@@ -9,7 +8,7 @@ type JobExperience = {
   details: ReactElement;
 };
 
-const experiences: Record<string, JobExperience> = {
+export const JOBS: Record<string, JobExperience> = {
   'Front End Developer @ Team Brilliant': {
     position: 'Front End Developer',
     company: 'Team Brilliant',
@@ -191,64 +190,3 @@ const experiences: Record<string, JobExperience> = {
     ),
   },
 };
-
-export function Experiences() {
-  const [activeJob, setActiveJob] = useState<string>(
-    Object.keys(experiences)[0],
-  );
-  useActiveSection('Experiences');
-
-  const selectedJob = experiences[activeJob];
-
-  return (
-    <section
-      id="Experiences"
-      className="min-h-screen w-full text-white flex flex-col items-center pt-5 mt-20"
-    >
-      <div className="relative">
-        <h2 className="text-2xl lg:text-4xl font-bold mb-2">Experiences</h2>
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[105%] border-dashed-large" />
-      </div>
-
-      <div className="w-full max-w-6xl mt-10 lg:mt-20 flex flex-col lg:flex-row gap-8 lg:text-base text-xs">
-        <div className="w-full lg:w-60 overflow-x-auto">
-          <div className="flex lg:flex-col border-b lg:border-b-0 lg:border-l border-cyan">
-            {Object.entries(experiences).map(([key, value]) => (
-              <button
-                key={key}
-                onClick={() => setActiveJob(key)}
-                className={`block shrink-0 cursor-pointer text-left px-4 py-3 transition-colors hover:text-cyan whitespace-nowrap ${
-                  activeJob === key
-                    ? 'text-cyan border-b-2 lg:border-b-0 lg:border-l-2 border-cyan lg:-ml-[1px]'
-                    : 'text-white/60'
-                }`}
-              >
-                {value.position}
-                <br />@ {value.company}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {selectedJob && (
-          <div className="flex-1">
-            <h3 className="text-base lg:text-2xl font-bold text-cyan mb-1">
-              <span className="text-white">{selectedJob.position} </span>
-              <br className="lg:hidden" /> 
-              <a
-                href={selectedJob.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative after:absolute after:bg-cyan after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300"
-              >
-                @ {selectedJob.company}
-              </a>
-            </h3>
-            <p className="text-white/60 mb-6">{selectedJob.period}</p>
-            {selectedJob.details}
-          </div>
-        )}
-      </div>
-    </section>
-  );
-}
