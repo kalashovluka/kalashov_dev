@@ -119,7 +119,7 @@ const experiences: Record<string, JobExperience> = {
             costs
           </li>
           <li>
-            Implemented caching layer and used Dijkstra's algorithm to
+            Implemented caching layer and used Dijkstra&apos;s algorithm to
             drastically improve performance and reduce pathfinding time from
             about 10 minutes to 15-30 seconds
           </li>
@@ -150,7 +150,7 @@ const experiences: Record<string, JobExperience> = {
             >
               Gudabooks
             </a>{' '}
-            and it's React Native application, featuring e-book store, library and audiobooks
+            and it&apos;s React Native application, featuring e-book store, library and audiobooks
             online streaming
           </li>
           <li>
