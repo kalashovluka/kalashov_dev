@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useActiveSection } from '../../context/use-active-section';
-import { JOBS } from './jobs';
+import { JOBS } from './jobs.constants';
 import { JobsNavigation } from './jobs-navigation';
+import { JobEntry } from './job-entry';
 
 export function Experiences() {
   useActiveSection('Experiences');
@@ -37,7 +38,14 @@ export function Experiences() {
               </a>
             </h3>
             <p className="text-white/60 mb-6">{selectedJob.period}</p>
-            {selectedJob.details}
+            {selectedJob.details.map((details, i) => (
+              <JobEntry
+                key={i}
+                link={details.link}
+                title={details.title}
+                bullets={details.bullets}
+              />
+            ))}
           </div>
         )}
       </div>

@@ -9,7 +9,7 @@ export function Works() {
       id="Works"
       className="min-h-screen w-full text-white flex flex-col items-center pt-20"
     >
-      <div className="relative">
+      <div className="relative max-lg:mb-5">
         <h2 className="text-2xl lg:text-4xl font-bold mb-2">
           Featured Projects
         </h2>
@@ -20,6 +20,7 @@ export function Works() {
         align="left"
         title="Norwex USA"
         imgSrc="/previews/norwex-preview.jpg"
+        link='https://my.norwex.com'
         skills={['React', 'Next.js', 'TailwindCSS', 'MobX', 'TypeScript']}
       >
         A global direct sales company, allowing individuals to become
@@ -30,6 +31,7 @@ export function Works() {
       <ProjectEntry
         align="right"
         title="HOWL Creator App"
+        link='https://howl.link'
         imgSrc="/previews/howl-preview.jpg"
         skills={['React', 'React Native', 'Expo', 'TailwindCSS', 'TypeScript']}
       >
@@ -40,16 +42,19 @@ export function Works() {
       <ProjectEntry
         align="left"
         title="VIARO"
+        link='https://viaro.ge'
         imgSrc="/previews/viaro-preview.jpg"
         skills={['React', 'React Native', 'Expo', 'TailwindCSS', 'TypeScript']}
       >
+        VIARO - car parts online marketplace. <br />
         What was created to facilitate human movement, should not become an
-        obstacle on the road. <br /> VIARO - car parts online marketplace.
+        obstacle on the road. 
       </ProjectEntry>
 
       <ProjectEntry
         align="right"
         title="Ally: Connect with anyone"
+        link="allyapp.one"
         imgSrc="/previews/ally-preview.jpg"
         skills={[
           'React Native',
@@ -61,25 +66,23 @@ export function Works() {
         ]}
       >
         Ally revolutionizes the way you connect with new acquaintances.
-        <br />
-        With our app, users import and classify their phonebook contacts to get
-        effective and optimal &quot;THE-RIGHT-6-PEOPLE&quot; chains in seconds.
       </ProjectEntry>
 
       <ProjectEntry
         align="left"
         title="PalitraL Online Store"
+        link='https://palitral.ge/'
         imgSrc="/previews/palitral-preview.jpg"
         skills={['PHP', 'Laravel', 'MySQL', 'RESTful API']}
       >
-        PalitraL Publishing was founded in 2005 with a mission of bridging the
-        gap between Georgian readers and books. Today it boasts the title of the
+        PalitraL Publishing boasts the title of the
         largest and most successful enterprise in the Georgian publishing market
       </ProjectEntry>
 
       <ProjectEntry
         align="right"
         title="Guda Audio Books"
+        link='https://gudabooks.ge/'
         imgSrc="/previews/gudabooks-preview.jpg"
         skills={['React Native', 'Node.js', 'NestJS', 'MySQL', 'RESTful API']}
       >

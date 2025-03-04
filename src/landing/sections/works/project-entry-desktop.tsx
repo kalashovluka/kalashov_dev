@@ -15,6 +15,8 @@ export function ProjectEntryDesktop({
   const contentBaseStyles = 'flex flex-col justify-center relative w-full z-1';
   const contentStyles = `${contentBaseStyles} ${align === 'right' ? 'items-start' : 'items-end'}`;
 
+  const textAlign = align === 'right' ? 'text-left' : 'text-right';
+
   return (
     <div className="w-full mt-10 min-h-96 relative hidden lg:flex">
       <a
@@ -26,7 +28,7 @@ export function ProjectEntryDesktop({
       </a>
       <div className={contentStyles}>
         <div className="text-2xl font-bold">{title}</div>
-        <div className="bg-[#132438b6] rounded-md p-4 w-lg mt-5">
+        <div className={`bg-[#132438b6] rounded-md p-4 w-md mt-5 text-sm ${textAlign}`}>
           {children}
         </div>
         <div className="flex gap-5 text-sm text-[#d5ddf6] mt-5">

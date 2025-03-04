@@ -5,4 +5,5 @@ export type ProjectEntryProps = PropsWithChildren<{
   imgSrc: string;
   title: string;
   skills: string[];
+  link: string;
 }>;

@@ -1,4 +1,4 @@
-import { JOBS } from './jobs';
+import { JOBS } from './jobs.constants';
 
 type Props = {
   activeJob: string;
