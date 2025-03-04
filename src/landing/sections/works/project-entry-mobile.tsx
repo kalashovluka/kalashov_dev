@@ -11,7 +11,7 @@ export function ProjectEntryMobile({
     <a
       href={link}
       target="_blank"
-      className="relative mt-10 lg:hidden"
+      className="relative mt-10 lg:hidden w-full min-h-48"
       rel="noopener noreferrer"
     >
       <img src={imgSrc} loading="lazy" />
