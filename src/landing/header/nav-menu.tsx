@@ -28,6 +28,15 @@ export function NavMenu({ onClose }: { onClose: () => void }) {
           isActive={activeSection === 'Contact'}
           onClick={onClose}
         />
+
+        <a
+          href="/Luka Kalashov Fullstack.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-cyan border-cyan border rounded-sm px-6 py-1 z-1"
+        >
+          Resume
+        </a>
       </div>
     </div>
   );

@@ -47,40 +47,50 @@ export function Contact() {
       </div>
 
       <div className="mt-10 max-w-3xl max-lg:text-sm">
-        <p className='text-center lg:px-4'>
+        <p className="text-center lg:px-4">
           I am always happy to explore new opportunities and collaborate on
           exciting projects. If you have any questions or would like to discuss
           a potential collaboration, please don&apos;t hesitate to reach out.
         </p>
 
-        <div className='flex justify-center w-full'>
-        <div className="inline-grid grid-cols-[auto_1fr] mt-10 gap-y-2 gap-x-5">
-          <Link
-            title="LinkedIn"
-            href="https://linkedin.com/in/kalashov"
-            icon={<LinkedInIcon />}
-          >
-            linkedin.com/in/kalashov
-          </Link>
+        <div className="flex flex-col items-center w-full">
+          <div className="inline-grid grid-cols-[auto_1fr] mt-10 gap-y-2 gap-x-5">
+            <Link
+              title="LinkedIn"
+              href="https://linkedin.com/in/kalashov"
+              icon={<LinkedInIcon />}
+            >
+              linkedin.com/in/kalashov
+            </Link>
 
-          <Link
-            title="Email"
-            href="mailto:kalashovluka@gmail.com"
-            icon={<EmailIcon />}
-          >
-            kalashovluka@gmail.com
-          </Link>
+            <Link
+              title="Email"
+              href="mailto:kalashovluka@gmail.com"
+              icon={<EmailIcon />}
+            >
+              kalashovluka@gmail.com
+            </Link>
 
-          <Link
-            title="Telegram"
-            href="https://t.me/kalashovluka"
-            icon={<TelegramIcon />}
-          >
-            t.me/kalashovluka
-          </Link>
+            <Link
+              title="Telegram"
+              href="https://t.me/kalashovluka"
+              icon={<TelegramIcon />}
+            >
+              t.me/kalashovluka
+            </Link>
+          </div>
+
+          <div className="flex justify-center mt-8">
+            <a
+              href="/Luka Kalashov Fullstack.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan border-cyan border rounded-sm px-8 py-2 text-lg"
+            >
+              Resume
+            </a>
+          </div>
         </div>
-        </div>
-        
       </div>
     </section>
   );
