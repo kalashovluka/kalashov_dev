@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
 import { useActiveSection } from '../context/use-active-section';
-import { EmailIcon } from '../icons/email.icon';
-import { LinkedInIcon } from '../icons/linkedin.icon';
-import { TelegramIcon } from '../icons/telegram.icon';
+import { EmailIcon } from '../../icons/email.icon';
+import { LinkedInIcon } from '../../icons/linkedin.icon';
+import { TelegramIcon } from '../../icons/telegram.icon';
 
 function Link({
   title,

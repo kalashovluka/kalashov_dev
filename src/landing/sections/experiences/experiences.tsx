@@ -1,53 +1,70 @@
-import { useState } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import { useEffect, useState } from 'react';
 import { useActiveSection } from '../../context/use-active-section';
-import { JOBS } from './jobs.constants';
-import { JobsNavigation } from './jobs-navigation';
-import { JobEntry } from './job-entry';
+import { ExperienceEntry } from './experience-entry';
+import { ExperiencesNavigation } from './experiences-navigation';
+import { EXPERIENCES } from './experiences.constants';
+import './slider.css';
 
 export function Experiences() {
   useActiveSection('Experiences');
 
-  const [activeJob, setActiveJob] = useState<string>(Object.keys(JOBS)[0]);
-  const selectedJob = JOBS[activeJob];
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    align: 'start',
+    axis: 'x',
+    loop: true,
+  });
+
+  const [activeExperienceIdx, setActiveExperienceIdx] = useState(0);
+  const selectedExperience = EXPERIENCES[activeExperienceIdx];
+
+  useEffect(() => {
+    emblaApi?.scrollTo(activeExperienceIdx);
+  }, [activeExperienceIdx]);
+
+  useEffect(() => {
+    if (!emblaApi) return undefined;
+
+    const onSelect = () => {
+      setActiveExperienceIdx(emblaApi.selectedScrollSnap());
+    };
+
+    emblaApi.on('select', onSelect);
+    return () => {
+      emblaApi.off('select', onSelect);
+    };
+  }, [emblaApi]);
 
   return (
     <section
       id="Experiences"
-      className="min-h-screen w-full text-white flex flex-col items-center pt-20"
+      className="flex min-h-screen w-full flex-col items-center pt-20 text-white"
     >
       <div className="relative">
-        <h2 className="text-2xl lg:text-4xl font-bold mb-2">Experiences</h2>
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[105%] border-dashed-large" />
+        <h2 className="mb-2 text-2xl font-bold lg:text-4xl">Experiences</h2>
+        <div className="border-dashed-large absolute bottom-0 left-1/2 w-[105%] -translate-x-1/2" />
       </div>
 
-      <div className="w-full max-w-6xl mt-10 lg:mt-20 flex flex-col lg:flex-row gap-8 lg:text-base text-xs">
-        <JobsNavigation activeJob={activeJob} setActiveJob={setActiveJob} />
+      <div className="mt-10 flex w-full max-w-6xl flex-col gap-8 text-xs lg:mt-20 lg:flex-row lg:text-base">
+        <ExperiencesNavigation
+          activeExperienceIdx={activeExperienceIdx}
+          setActiveExperienceIdx={setActiveExperienceIdx}
+        />
 
-        {selectedJob && (
-          <div className="flex-1">
-            <h3 className="text-base lg:text-2xl font-bold text-cyan mb-1">
-              <span className="text-white">{selectedJob.position} </span>
-              <br className="lg:hidden" />
-              <a
-                href={selectedJob.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative after:absolute after:bg-cyan after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-300"
-              >
-                @ {selectedJob.company}
-              </a>
-            </h3>
-            <p className="text-white/60 mb-6">{selectedJob.period}</p>
-            {selectedJob.details.map((details, i) => (
-              <JobEntry
-                key={i}
-                link={details.link}
-                title={details.title}
-                bullets={details.bullets}
-              />
-            ))}
+        <section className="embla lg:hidden">
+          <div className="embla__viewport" ref={emblaRef}>
+            <div className="embla__container">
+              {EXPERIENCES.map((details, index) => (
+                <div className="embla__slide" key={index}>
+                  <ExperienceEntry experience={details} />
+                </div>
+              ))}
+            </div>
           </div>
-        )}
+        </section>
+        <div className="hidden lg:flex lg:flex-1">
+          <ExperienceEntry experience={selectedExperience} />
+        </div>
       </div>
     </section>
   );

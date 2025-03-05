@@ -1,4 +1,4 @@
-import { LinkIcon } from '../../icons/link.icon';
+import { LinkIcon } from '../../../icons/link.icon';
 import { ProjectEntryProps } from './project-entry.types';
 
 export function ProjectEntryDesktop({

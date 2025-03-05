@@ -6,8 +6,8 @@ export type JobExperience = {
   details: { title?: string; link?: string; bullets: string[] }[];
 };
 
-export const JOBS: Record<string, JobExperience> = {
-  'Front End Developer @ Team Brilliant': {
+export const EXPERIENCES = [
+  {
     position: 'Front End Developer',
     company: 'Team Brilliant',
     link: 'https://www.linkedin.com/company/teambrilliant',
@@ -33,7 +33,7 @@ export const JOBS: Record<string, JobExperience> = {
       },
     ],
   },
-  'Full Stack Developer @ Spinom': {
+  {
     position: 'Full Stack Developer',
     company: 'Spinom',
     link: 'https://www.linkedin.com/company/spinom',
@@ -69,7 +69,7 @@ export const JOBS: Record<string, JobExperience> = {
       },
     ],
   },
-  'Back End Developer @ Lupi AI': {
+  {
     position: 'Back End Developer',
     company: 'Lupi AI',
     link: 'https://www.linkedin.com/company/lupiai',
@@ -82,5 +82,5 @@ export const JOBS: Record<string, JobExperience> = {
         ],
       },
     ],
-  },
-};
+  }
+]

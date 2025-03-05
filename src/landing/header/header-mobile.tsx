@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavMenu } from './nav-menu';
-import { MenuIcon } from '../icons/menu.icon';
+import { MenuIcon } from '../../icons/menu.icon';
 
 export function HeaderMobile() {
   const [isOpen, setIsOpen] = useState(false);
