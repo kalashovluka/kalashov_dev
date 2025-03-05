@@ -54,7 +54,7 @@ export const EXPERIENCES = [
         bullets: [
           'Reworked backend API for Ally, Georgian social networking app',
           'Migrated from AWS Neptune to Neo4j database, reducing operational costs',
-          'Implemented caching layer and used Dijkstra&apos;s algorithm to drastically improve performance and reduce pathfinding time from about 10 minutes to 15-30 seconds',
+          'Implemented caching layer and used Dijkstra\'s algorithm to drastically improve performance and reduce pathfinding time from about 10 minutes to 15-30 seconds',
           'Worked closely with product to design and implement enhanced UI',
         ],
       },
@@ -62,7 +62,7 @@ export const EXPERIENCES = [
         title: 'PalitraL Publishing',
         link: 'https://www.linkedin.com/company/palitra-l-publishing',
         bullets: [
-          'Developed backend API for Gudabooks and it&apos;s React Native application, featuring e-book store, library and audiobooks online streaming',
+          'Developed backend API for Gudabooks and it\'s React Native application, featuring e-book store, library and audiobooks online streaming',
           'Developed backend API for PalitraL Publishing online store',
           'Implemented integrations with banking APIs and delivery services',
         ],
