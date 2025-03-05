@@ -7,7 +7,7 @@ export function MenuIcon({ isOpen, className = '' }: Props) {
   return (
     <svg
       viewBox="0 0 24 24"
-      className={`w-full h-full ${className}`}
+      className={`h-full w-full ${className}`}
       fill="none"
       stroke="currentColor"
       strokeWidth="2"
@@ -18,8 +18,8 @@ export function MenuIcon({ isOpen, className = '' }: Props) {
         y1="6"
         x2="20"
         y2="6"
-        className={`transition-transform duration-300 origin-[50%_6px] ${
-          isOpen ? 'rotate-45 translate-y-[6px]' : ''
+        className={`origin-[50%_6px] transition-transform duration-300 ${
+          isOpen ? 'translate-y-[6px] rotate-45' : ''
         }`}
       />
       <line
@@ -36,10 +36,10 @@ export function MenuIcon({ isOpen, className = '' }: Props) {
         y1="18"
         x2="20"
         y2="18"
-        className={`transition-transform duration-300 origin-[50%_18px] ${
-          isOpen ? '-rotate-45 -translate-y-[6px]' : ''
+        className={`origin-[50%_18px] transition-transform duration-300 ${
+          isOpen ? '-translate-y-[6px] -rotate-45' : ''
         }`}
       />
     </svg>
   );
-} 
+}

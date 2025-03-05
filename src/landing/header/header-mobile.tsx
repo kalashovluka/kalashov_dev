@@ -7,10 +7,10 @@ export function HeaderMobile() {
 
   return (
     <>
-      <header className="w-screen backdrop-blur-lg z-[3] p-5 fixed top-0 font-mono tracking-tighter text-cyan flex lg:hidden justify-between">
+      <header className="text-cyan fixed top-0 z-[3] flex w-screen justify-between p-5 font-mono tracking-tighter backdrop-blur-lg lg:hidden">
         <p className="text-xl font-bold text-white">Luka Kalashov</p>
-        
-        <button className="w-8 h-8 z-[3]" onClick={() => setIsOpen(!isOpen)}>
+
+        <button className="z-[3] h-8 w-8" onClick={() => setIsOpen(!isOpen)}>
           <MenuIcon isOpen={isOpen} />
         </button>
       </header>

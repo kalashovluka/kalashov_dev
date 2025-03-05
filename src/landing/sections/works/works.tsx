@@ -7,20 +7,20 @@ export function Works() {
   return (
     <section
       id="Works"
-      className="min-h-screen w-full text-white flex flex-col items-center pt-20"
+      className="flex min-h-screen w-full flex-col items-center pt-20 text-white"
     >
       <div className="relative max-lg:mb-5">
-        <h2 className="text-2xl lg:text-4xl font-bold mb-2">
+        <h2 className="mb-2 text-2xl font-bold lg:text-4xl">
           Featured Projects
         </h2>
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[105%] border-dashed-large" />
+        <div className="border-dashed-large absolute bottom-0 left-1/2 w-[105%] -translate-x-1/2" />
       </div>
 
       <ProjectEntry
         align="left"
         title="Norwex USA"
         imgSrc="/previews/norwex-preview.jpg"
-        link='https://my.norwex.com'
+        link="https://my.norwex.com"
         skills={['React', 'Next.js', 'TailwindCSS', 'MobX', 'TypeScript']}
       >
         A global direct sales company, allowing individuals to become
@@ -31,7 +31,7 @@ export function Works() {
       <ProjectEntry
         align="right"
         title="HOWL Creator App"
-        link='https://howl.link'
+        link="https://howl.link"
         imgSrc="/previews/howl-preview.jpg"
         skills={['React', 'React Native', 'Expo', 'TailwindCSS', 'TypeScript']}
       >
@@ -42,13 +42,13 @@ export function Works() {
       <ProjectEntry
         align="left"
         title="VIARO"
-        link='https://viaro.ge'
+        link="https://viaro.ge"
         imgSrc="/previews/viaro-preview.jpg"
         skills={['React', 'React Native', 'Expo', 'TailwindCSS', 'TypeScript']}
       >
         VIARO - car parts online marketplace. <br />
         What was created to facilitate human movement, should not become an
-        obstacle on the road. 
+        obstacle on the road.
       </ProjectEntry>
 
       <ProjectEntry
@@ -71,18 +71,18 @@ export function Works() {
       <ProjectEntry
         align="left"
         title="PalitraL Online Store"
-        link='https://palitral.ge/'
+        link="https://palitral.ge/"
         imgSrc="/previews/palitral-preview.jpg"
         skills={['PHP', 'Laravel', 'MySQL', 'RESTful API']}
       >
-        PalitraL Publishing boasts the title of the
-        largest and most successful enterprise in the Georgian publishing market
+        PalitraL Publishing boasts the title of the largest and most successful
+        enterprise in the Georgian publishing market
       </ProjectEntry>
 
       <ProjectEntry
         align="right"
         title="Guda Audio Books"
-        link='https://gudabooks.ge/'
+        link="https://gudabooks.ge/"
         imgSrc="/previews/gudabooks-preview.jpg"
         skills={['React Native', 'Node.js', 'NestJS', 'MySQL', 'RESTful API']}
       >

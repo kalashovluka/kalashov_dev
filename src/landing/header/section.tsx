@@ -13,11 +13,11 @@ export function Section({
     <a
       href={`#${section}`}
       onClick={onClick}
-      className={`transition-all duration-300 capitalize relative text-cyan group`}
+      className={`text-cyan group relative capitalize transition-all duration-300`}
     >
       {`<${section} />`}
       <span
-        className={`absolute -bottom-1 left-0 h-[1px] bg-cyan transition-all duration-300 ${
+        className={`bg-cyan absolute -bottom-1 left-0 h-[1px] transition-all duration-300 ${
           isActive ? 'w-full' : 'w-0 group-hover:w-full'
         }`}
       />

@@ -16,7 +16,7 @@ export function useActiveSection(sectionId: SectionName, threshold = 0.2) {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log('entries', entries)
+        console.log('entries', entries);
 
         entries.forEach((entry) => {
           if (entry.isIntersecting === currentValue) return;

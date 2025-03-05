@@ -6,23 +6,25 @@ export function About() {
   return (
     <section
       id="About"
-      className="min-h-screen w-full text-white justify-center items-center flex py-20"
+      className="flex min-h-screen w-full items-center justify-center py-20 text-white"
     >
-      <div className="lg:max-w-4xl w-full">
-        <p className="text-sm">Hello There! <br className='lg:hidden' /> My name is Luka and I am a</p>
-        <div className="font-bold text-4xl lg:text-[110px] my-2 flex flex-wrap items-center">
+      <div className="w-full lg:max-w-4xl">
+        <p className="text-sm">
+          Hello There! <br className="lg:hidden" /> My name is Luka and I am a
+        </p>
+        <div className="my-2 flex flex-wrap items-center text-4xl font-bold lg:text-[110px]">
           WEB DEVELOPER
-          <div className="relative left-2 lg:left-5 w-3 lg:w-6 h-8 lg:h-20 animate-cursor-blink" />
+          <div className="animate-cursor-blink relative left-2 h-8 w-3 lg:left-5 lg:h-20 lg:w-6" />
         </div>
-        <p className="mt-2 lg:text-base text-sm">
+        <p className="mt-2 text-sm lg:text-base">
           with more than{' '}
           <strong>
             <i>6 years</i>
           </strong>{' '}
-          of commercial experience in building full-featured web and
-          mobile applications. List of my technologies includes:
+          of commercial experience in building full-featured web and mobile
+          applications. List of my technologies includes:
         </p>
-        <ul className="list-triangle-sm lg:list-triangle mt-5 flex flex-col flex-wrap lg:max-h-24 max-h-32 max-w-full gap-x-10 lg:text-base text-xs">
+        <ul className="list-triangle-sm lg:list-triangle mt-5 flex max-h-32 max-w-full flex-col flex-wrap gap-x-10 text-xs lg:max-h-24 lg:text-base">
           <li>TypeScript</li>
           <li>React</li>
           <li>Next.js</li>

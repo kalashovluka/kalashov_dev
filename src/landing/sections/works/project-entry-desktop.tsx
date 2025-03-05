@@ -19,7 +19,7 @@ export function ProjectEntryDesktop({
   const textAlign = align === 'right' ? 'text-left' : 'text-right';
 
   return (
-    <div className="w-full mt-10 min-h-96 relative hidden lg:flex">
+    <div className="relative mt-10 hidden min-h-96 w-full lg:flex">
       <a
         href="https://www.howl.link/"
         target="_blank"
@@ -31,15 +31,17 @@ export function ProjectEntryDesktop({
       <div className={contentStyles}>
         <div className="text-2xl font-bold">{title}</div>
         <div
-          className={`bg-[#132438b6] rounded-md p-4 mt-5 text-sm ${textAlign}`}
+          className={`mt-5 rounded-md bg-[#132438b6] p-4 text-sm ${textAlign}`}
         >
           {children}
         </div>
-        <div className='flex flex-wrap text-sm text-[#d5ddf6] mt-5 gap-x-4 gap-y-2'>
-          {skills.map((skill, i) => <div key={i}>{skill}</div>)}
+        <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm text-[#d5ddf6]">
+          {skills.map((skill, i) => (
+            <div key={i}>{skill}</div>
+          ))}
         </div>
         <a
-          className="relative -left-1 w-6 h-6 mt-2"
+          className="relative -left-1 mt-2 h-6 w-6"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.howl.link/"

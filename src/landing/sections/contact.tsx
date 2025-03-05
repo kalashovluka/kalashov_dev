@@ -18,7 +18,7 @@ function Link({
   return (
     <>
       <div className="flex items-center gap-3">
-        <div className="w-4 h-4">{icon}</div>
+        <div className="h-4 w-4">{icon}</div>
         <span>{title}: </span>
       </div>
       <a
@@ -39,11 +39,11 @@ export function Contact() {
   return (
     <section
       id="Contact"
-      className="min-h-screen w-full text-white flex flex-col items-center justify-center"
+      className="flex min-h-screen w-full flex-col items-center justify-center text-white"
     >
       <div className="relative">
-        <h2 className="text-2xl lg:text-4xl font-bold mb-2">Contact Me</h2>
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[105%] border-dashed-large" />
+        <h2 className="mb-2 text-2xl font-bold lg:text-4xl">Contact Me</h2>
+        <div className="border-dashed-large absolute bottom-0 left-1/2 w-[105%] -translate-x-1/2" />
       </div>
 
       <div className="mt-10 max-w-3xl max-lg:text-sm">
@@ -53,8 +53,8 @@ export function Contact() {
           a potential collaboration, please don&apos;t hesitate to reach out.
         </p>
 
-        <div className="flex flex-col items-center w-full">
-          <div className="inline-grid grid-cols-[auto_1fr] mt-10 gap-y-2 gap-x-5">
+        <div className="flex w-full flex-col items-center">
+          <div className="mt-10 inline-grid grid-cols-[auto_1fr] gap-x-5 gap-y-2">
             <Link
               title="LinkedIn"
               href="https://linkedin.com/in/kalashov"
@@ -80,12 +80,12 @@ export function Contact() {
             </Link>
           </div>
 
-          <div className="flex justify-center mt-8">
+          <div className="mt-8 flex justify-center">
             <a
               href="/Luka Kalashov Fullstack.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-cyan border-cyan border rounded-sm px-8 py-2 text-lg"
+              className="text-cyan border-cyan rounded-sm border px-8 py-2 text-lg"
             >
               Resume
             </a>
