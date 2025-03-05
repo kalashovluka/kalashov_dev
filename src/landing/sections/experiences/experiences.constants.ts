@@ -19,7 +19,7 @@ export const EXPERIENCES = [
         bullets: [
           'Worked on enhancing and modernizing web resources for Norwex - a global direct sales company',
           'Redesigned legacy Backbone.js platform into modern, scalable solution using TypeScript, React and Next.js',
-          'Contributed to the development of a monorepo architecture, that improved project structure and developer experience',
+          'Contributed to migration from microfrontends to monorepo, improving project structure and developer experience',
         ],
       },
       {
