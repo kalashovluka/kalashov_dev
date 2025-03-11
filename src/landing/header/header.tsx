@@ -9,7 +9,7 @@ export function Header() {
   return (
     <>
       <title>{title}</title>
-      <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
       <HeaderDesktop />
       <HeaderMobile />
