@@ -1,0 +1,10 @@
+diff --git a/esm/embla-carousel-react.esm.js b/esm/embla-carousel-react.esm.js
+index 9be497027f5db2d698bb5c3b89b682bbdbce61c5..267ce5b0d896eca2eb075f398f92fe6fb09b5134 100644
+--- a/esm/embla-carousel-react.esm.js
++++ b/esm/embla-carousel-react.esm.js
+@@ -1,4 +1,4 @@
+-import { useRef, useState, useCallback, useEffect } from 'react';
++import { useRef, useState, useCallback, useEffect } from 'preact/hooks';
+ import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+ import EmblaCarousel from 'embla-carousel';
+ 
