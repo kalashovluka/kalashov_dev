@@ -82,7 +82,7 @@ function Link({
   
             <div className="mt-8 flex justify-center">
               <a
-                href="/Luka Kalashov Fullstack.pdf"
+                href="/Luka Kalashov Frontend.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-cyan border-cyan rounded-sm border px-8 py-2 text-lg"
