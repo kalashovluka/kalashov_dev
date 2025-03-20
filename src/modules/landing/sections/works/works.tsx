@@ -44,7 +44,7 @@ export function Works() {
         title="VIARO"
         link="https://viaro.ge"
         imgSrc="/previews/viaro-preview.jpg"
-        skills={['React', 'React Native', 'Expo', 'TailwindCSS', 'TypeScript']}
+        skills={['React', 'React Native', 'Expo', 'Redux', 'TailwindCSS']}
       >
         VIARO - car parts online marketplace. <br />
         What was created to facilitate human movement, should not become an
@@ -56,14 +56,7 @@ export function Works() {
         title="Ally: Connect with anyone"
         link="allyapp.one"
         imgSrc="/previews/ally-preview.jpg"
-        skills={[
-          'React Native',
-          'Node.js',
-          'NestJS',
-          'PostgreSQL',
-          'Neo4j',
-          'ElasticSearch',
-        ]}
+        skills={['React', 'React Native', 'Expo', 'Redux', 'TypeScript']}
       >
         Ally revolutionizes the way you connect with new acquaintances.
       </ProjectEntry>
@@ -73,7 +66,7 @@ export function Works() {
         title="PalitraL Online Store"
         link="https://palitral.ge/"
         imgSrc="/previews/palitral-preview.jpg"
-        skills={['PHP', 'Laravel', 'MySQL', 'RESTful API']}
+        skills={['React', 'React Native', 'Expo', 'Redux', 'TypeScript']}
       >
         PalitraL Publishing boasts the title of the largest and most successful
         enterprise in the Georgian publishing market
@@ -84,7 +77,7 @@ export function Works() {
         title="Guda Audio Books"
         link="https://gudabooks.ge/"
         imgSrc="/previews/gudabooks-preview.jpg"
-        skills={['React Native', 'Node.js', 'NestJS', 'MySQL', 'RESTful API']}
+        skills={['React', 'React Native', 'Expo', 'Redux', 'TypeScript']}
       >
         The most popular Georgian e-book reading and listening application
       </ProjectEntry>

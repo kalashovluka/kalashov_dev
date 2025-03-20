@@ -24,7 +24,7 @@ export function About() {
           of commercial experience in building full-featured web and mobile
           applications. List of my technologies includes:
         </p>
-        <ul className="list-triangle-sm lg:list-triangle mt-5 flex max-h-32 max-w-full flex-col flex-wrap gap-x-10 text-xs lg:max-h-24 lg:text-base">
+        <ul className="list-triangle-sm lg:list-triangle mt-5 flex max-h-24 max-w-full flex-col flex-wrap gap-x-10 text-xs lg:max-h-24 lg:text-base">
           <li>TypeScript</li>
           <li>React</li>
           <li>Next.js</li>
@@ -37,9 +37,6 @@ export function About() {
           <li>NestJS</li>
           <li>MySQL / PostgreSQL</li>
           <li>TypeORM / Prisma</li>
-          <li>MongoDB</li>
-          <li>Mongoose / Typegoose</li>
-          <li>ElasticSearch</li>
         </ul>
       </div>
     </section>

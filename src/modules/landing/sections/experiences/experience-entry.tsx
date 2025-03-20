@@ -32,8 +32,7 @@ export function ExperienceEntry({ experience }: Props) {
                   href={link}
                 >
                   {title}
-                </a>{' '}
-                · Contract
+                </a>
               </div>
             )}
             <ul className="list-triangle-sm lg:list-triangle space-y-4">

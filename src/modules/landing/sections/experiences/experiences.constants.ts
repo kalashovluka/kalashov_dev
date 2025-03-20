@@ -18,7 +18,7 @@ export const EXPERIENCES = [
         link: 'https://www.linkedin.com/company/norwex/',
         bullets: [
           'Worked on enhancing and modernizing web resources for Norwex - a global direct sales company',
-          'Redesigned legacy Backbone.js platform into modern, scalable solution using TypeScript, React and Next.js',
+          'Implemented modern and scalable solution using TypeScript, React and Next.js to replace a legacy Backbone.js system',
           'Contributed to migration from microfrontends to monorepo, improving project structure and developer experience',
         ],
       },
@@ -37,8 +37,17 @@ export const EXPERIENCES = [
     position: 'Full Stack Developer',
     company: 'Spinom',
     link: 'https://www.linkedin.com/company/spinom',
-    period: 'Jul 2020 - Feb 2022 · 1 yr 8 mos',
+    period: 'Jul 2019 - Feb 2022 · 2 yr 8 mos',
     details: [
+      {
+        title: 'PalitraL Publishing',
+        link: 'https://www.linkedin.com/company/palitra-l-publishing',
+        bullets: [
+          'Developed a complex online store for PalitraL, featuring shopping functionality, library and audiobooks online streaming',
+          'Participated in designing and building mobile application with React Native and Expo',
+          'Implemented integrations with a number of banking APIs and delivery services',
+        ],
+      },
       {
         title: 'VIARO',
         link: 'https://www.linkedin.com/company/viaro/',
@@ -52,32 +61,23 @@ export const EXPERIENCES = [
         title: 'Ally',
         link: 'https://www.linkedin.com/company/allyconnect/',
         bullets: [
-          'Reworked backend API for Ally, Georgian social networking app',
+          'Reworked React Native application for Ally, Georgian social networking app',
+          'Worked closely with product to design and implement enhanced UI',
           'Migrated from AWS Neptune to Neo4j database, reducing operational costs',
           'Implemented caching layer and used Dijkstra\'s algorithm to drastically improve performance and reduce pathfinding time from about 10 minutes to 15-30 seconds',
-          'Worked closely with product to design and implement enhanced UI',
-        ],
-      },
-      {
-        title: 'PalitraL Publishing',
-        link: 'https://www.linkedin.com/company/palitra-l-publishing',
-        bullets: [
-          'Developed backend API for Gudabooks and it\'s React Native application, featuring e-book store, library and audiobooks online streaming',
-          'Developed backend API for PalitraL Publishing online store',
-          'Implemented integrations with banking APIs and delivery services',
         ],
       },
     ],
   },
   {
-    position: 'Back End Developer',
+    position: 'Full Stack Developer',
     company: 'Lupi AI',
     link: 'https://www.linkedin.com/company/lupiai',
-    period: 'Nov 2018 - Jun 2020 · 1 yr 8 mos',
+    period: 'Nov 2018 - Jun 2019 · 8 mos',
     details: [
       {
         bullets: [
-          'Worked on a comprehensive university management backend system based on NestJS and MongoDB',
+          'Worked on a comprehensive university management backend system based on TypeScript, React, NestJS and MongoDB',
           'Contributed to the development of modules responsible for financial management, course management and student/personnel administration',
         ],
       },
