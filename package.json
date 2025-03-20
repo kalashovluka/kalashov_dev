@@ -1,38 +1,25 @@
 {
   "name": "kalashov_dev",
-  "version": "1.0.0",
-  "private": true,
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "rsbuild build",
-    "dev": "rsbuild dev --open",
-    "format": "prettier --write .",
-    "lint": "eslint .",
-    "preview": "rsbuild preview"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/preact": "^4.0.5",
+    "@nanostores/preact": "^0.5.2",
+    "@tailwindcss/vite": "^4.0.14",
+    "astro": "^5.5.3",
     "embla-carousel-react": "^8.5.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "nanostores": "^0.11.4",
+    "preact": "^10.26.4",
+    "tailwindcss": "^4.0.14"
   },
-  "devDependencies": {
-    "@eslint/compat": "^1.2.7",
-    "@eslint/js": "^9.21.0",
-    "@rsbuild/core": "^1.2.11",
-    "@rsbuild/plugin-react": "^1.1.1",
-    "@tailwindcss/postcss": "^4.0.9",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "eslint": "^9.21.0",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "globals": "^16.0.0",
-    "postcss": "^8.5.3",
-    "postcss-loader": "^8.1.1",
-    "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "tailwindcss": "^4.0.9",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.24.1"
+  "packageManager": "yarn@4.7.0",
+  "resolutions": {
+    "embla-carousel-react@npm:^8.5.2": "patch:embla-carousel-react@npm%3A8.5.2#~/.yarn/patches/embla-carousel-react-npm-8.5.2-0ff5879d30.patch"
   }
 }
