@@ -2,16 +2,17 @@ import { useStore } from '@nanostores/preact';
 import { HeaderDesktop } from './header-desktop';
 import { HeaderMobile } from './header-mobile';
 import { activeSectionStore } from '../state/active-section.store';
+import { useEffect } from 'preact/hooks';
 
 export function Header() {
   const activeSection = useStore(activeSectionStore);
-  const title = `Luka Kalashov | ${activeSection}`;
+  
+  useEffect(() => {
+    document.title = `Luka Kalashov | ${activeSection}`
+  }, [activeSection])
 
   return (
     <>
-      <title>{title}</title>
-      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
       <HeaderDesktop />
       <HeaderMobile />
     </>

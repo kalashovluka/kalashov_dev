@@ -1,9 +1,22 @@
 ---
-import "./styles.css";
 import Layout from "../layouts/Layout.astro";
-import { LandingPage } from "../modules/landing/landing.page";
+import { Header } from "../modules/landing/header/header";
+import { About } from "../modules/landing/sections/about";
+import { Contact } from "../modules/landing/sections/contact";
+import { Experiences } from "../modules/landing/sections/experiences/experiences";
+import { Works } from "../modules/landing/sections/works/works";
+import "./styles.css";
 ---
 
 <Layout>
-  <LandingPage client:load />
+  <Header client:load />
+
+  <div class="flex h-full min-h-screen w-full flex-col items-center font-mono">
+    <div class="w-screen max-w-screen px-5 lg:w-5xl lg:max-w-5xl">
+      <About client:idle />
+      <Experiences client:load />
+      <Works client:idle />
+      <Contact client:idle />
+    </div>
+  </div>
 </Layout>
