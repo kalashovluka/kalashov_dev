@@ -1,10 +1,10 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { ExperienceEntry } from "./experience-entry";
 import { ExperiencesNavigation } from "./experiences-navigation";
-import { EXPERIENCES } from "./experiences.constants";
 import "./slider.css";
 import { useSectionObserver } from "../../state/use-section-observer";
 import { useEffect, useState } from "preact/hooks";
+import { EXPERIENCES } from "../../core/landing.constants";
 
 export function Experiences() {
   useSectionObserver("Experiences");

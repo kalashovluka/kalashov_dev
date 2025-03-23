@@ -1,3 +1,4 @@
+import { RESUME_HREF } from "../core/landing.constants";
 import { Section } from "./section";
 
 export function NavMenu({ onClose }: { onClose: () => void }) {
@@ -11,7 +12,7 @@ export function NavMenu({ onClose }: { onClose: () => void }) {
         <Section section="Contact" onClick={onClose} />
 
         <a
-          href="/Luka Kalashov Frontend.pdf"
+          href={RESUME_HREF}
           target="_blank"
           rel="noopener noreferrer"
           className="text-cyan border-cyan z-1 rounded-sm border px-6 py-1"

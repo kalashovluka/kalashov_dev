@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'preact/hooks';
-import { EXPERIENCES } from './experiences.constants';
+import { EXPERIENCES } from '../../core/landing.constants';
 
 type Props = {
   activeExperienceIdx: number;

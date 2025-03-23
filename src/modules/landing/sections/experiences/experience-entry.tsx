@@ -1,7 +1,7 @@
-import type { JobExperience } from "./experiences.constants";
+import type { ExperiencesEntry } from "../../core/landing.types";
 
 type Props = {
-  experience: JobExperience;
+  experience: ExperiencesEntry;
 };
 
 export function ExperienceEntry({ experience }: Props) {

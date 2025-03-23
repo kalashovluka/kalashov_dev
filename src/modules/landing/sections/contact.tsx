@@ -3,6 +3,7 @@ import { EmailIcon } from "../../icons/email.icon";
 import { LinkedInIcon } from "../../icons/linkedin.icon";
 import { TelegramIcon } from "../../icons/telegram.icon";
 import { useSectionObserver } from "../state/use-section-observer";
+import { RESUME_HREF } from "../core/landing.constants";
 
 function Link({
     title,
@@ -82,7 +83,7 @@ function Link({
   
             <div className="mt-8 flex justify-center">
               <a
-                href="/Luka Kalashov Frontend.pdf"
+                href={RESUME_HREF}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-cyan border-cyan rounded-sm border px-8 py-2 text-lg"
